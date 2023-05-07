@@ -87,19 +87,19 @@ main {
 
 /* Hero */
 #hero {
-margin-top: 65px;
-padding: 70px 0;
-max-width: 1200px;
-display:flex;
-justify-content: center;
-align-content: center;
+    margin-top: 65px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .hero-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;  
+    width: 50%;
 }
 
 .hero-info h1 {
@@ -116,7 +116,7 @@ align-content: center;
     color: var(--text-gray);
 }
 
-.hero-info p > span {
+.hero-info p>span {
     font-weight: 800;
 }
 
@@ -162,12 +162,12 @@ align-content: center;
 }
 
 .hero-card-top span {
-background: var(--primary);
-text-align: center;
-width: 50px;
-padding: 3px 0px;
-font-size: 14px;
-border-radius: 10px;
+    background: var(--primary);
+    text-align: center;
+    width: 50px;
+    padding: 3px 0px;
+    font-size: 14px;
+    border-radius: 10px;
 }
 
 .hero-card-bottom {
@@ -189,4 +189,80 @@ border-radius: 10px;
 .hero-card-creator img {
     height: 40px;
     width: 40px;
+}
+
+.creator-info p:first-child,
+.card-price p {
+    color: var(--text-gray);
+    font-size: 12px;
+    font-weight: 300px;
+}
+
+.card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-price span,
+.creator-info p:last-child {
+    font-size: 14px;
+}
+
+.card-price span {
+    font-weight: 700;
+}
+
+/* INFO CARD */
+
+#info {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#info H2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card {
+    width: 300px;
+    height: 300px;
+    padding: 40px 30px;
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.info-card img {
+    width: 50px;
+}
+
+.info-card h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info-card p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-gray);
 }
